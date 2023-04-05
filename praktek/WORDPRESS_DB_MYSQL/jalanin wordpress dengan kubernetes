@@ -1,0 +1,17 @@
+1. masuk ke Wordpress-kubernetes
+2. jalankan perintash kubectl apply -f mysql
+3. jalan kubectl apply -f wordpress
+4. kubectl get svc
+5. ambil clusterIP svc-wordpress dibuka di browser dengan sertakan port nya 
+    contoh nya ClusterIP:88 -> 123.34.54.55:88
+
+penjelasan 
+
+harus di apply pertama adalah mysql karena wordpress butuh Database untuk akses data nya 
+dengan perintah kubectl apply -f mysql dan wordpress dia akan menjalan code yang terdapat pada yaml 
+semua file yaml yang terdapat di mysql dan wordpress akan dijalankan agar aplikasi berjalan 
+
+#NOTE
+
+ketika ingin dinaikain ke server tinggal conect ke Cloud dan
+ganti dari tiap Type dari service ke type: LoadBalancer

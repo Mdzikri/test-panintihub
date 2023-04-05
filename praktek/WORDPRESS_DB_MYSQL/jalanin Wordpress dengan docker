@@ -1,0 +1,6 @@
+
+1. buka file wordpress_with_docker
+2. jalankan perintah sudo docker-compose up -d
+3. buka file docker-compose yang saya buat untuk mastiin port atau 
+4. jalankna perintah sudo docker container ls untuk melihat port 
+5. di browser ketik localhost:8085 karena itu port yang dibuat

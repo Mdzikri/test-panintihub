@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: wordpress
+spec:
+  selector:
+    matchLabels:
+      app: wordpress
+  template:
+    metadata:
+      labels:
+        app: wordpress
+    spec:
+      containers:
+      - name: app-wordpress
+        image: wordpress:php8.1-apache
+        ports:
+        - containerPort: 80
+        envFrom:
+        - configMapRef:
+           name: env-worpress
+

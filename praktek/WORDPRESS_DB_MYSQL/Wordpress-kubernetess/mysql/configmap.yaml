@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: env-db
+data:
+  MYSQL_DATABASE: 'coba'
+  MYSQL_USER: 'dzikri'
+  MYSQL_PASSWORD: '123'
+  MYSQL_ROOT_PASSWORD: '123'
