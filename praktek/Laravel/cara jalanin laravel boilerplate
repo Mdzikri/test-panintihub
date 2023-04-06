@@ -1,0 +1,9 @@
+1. saya sudah buat dockerfile dan docker-compose
+
+2. jalanin dockerfile dengan docker build dengan nama laravel
+
+4. setelah itu jalankan docker-compose up
+
+5. setelah semua selesai cek ke broser localhost:8000
+
+6. untuk terhubung ke aws kita perlu menggunakan Kubernetes
